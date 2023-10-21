@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Daftar Film</title>
+      </head>
+      <body>
+            <h1>Daftar Film</h1>
+            <ul>
+                  <% movies.forEach(function(movie) { %>
+                  <li>
+                        <a href="/movies/<%= movie.id %>"><%= movie.title %></a>
+                  </li>
+                  <% }); %>
+            </ul>
+            <a href="/movies/create">Tambah Film</a>
+      </body>
+</html>

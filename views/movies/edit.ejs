@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Edit Film</title>
+      </head>
+      <body>
+            <h1>Edit Film</h1>
+            <form action="/movies/<%= movies.id %>" method="GET" enctype="multipart/form-data">
+                  <input type="hidden" name="_method" value="PUT" />
+                  <label for="id">Id:</label>
+                  <input type="text" name="id" value="<%= movies.id %>" required />
+                  <label for="title">Judul:</label>
+                  <input type="text" name="title" value="<%= movies.title %>" required />
+                  <label for="genres">Genre:</label>
+                  <input name="genres" value="<%= movies.genres %>" required ></input>
+                  <label for="year">Tahun:</label>
+                  <input name="year" value="<%= movies.year %>" required></input>
+                  <label for="photo">Foto:</label>
+                  <input type="file" name="photo" accept="image/*" required />
+                  <button type="submit">Simpan</button>
+            </form>
+      </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <title>Detail Film</title>
+      </head>
+      <body>
+            <h1>Detail Film</h1>
+            <h2><%= movie.title %></h2>
+            <p><%= movie.genres %></p>
+            <img src="/<%= movie.photo %>" alt="<%= movie.title %>" />
+            <a href="/movies/<%= movie.id %>/edit">Edit</a>
+            <a href="/movies/<%= movie.id %>">Hapus</a>
+      </body>
+</html>
